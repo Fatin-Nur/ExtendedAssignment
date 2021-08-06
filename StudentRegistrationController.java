@@ -100,7 +100,7 @@ public class StudentRegistrationController  {
 		ResultSet rs = null;
 		PreparedStatement pst = null;
 	
-		public void Add() {
+		public void Register() {
 		
 		con= MySQLConnect.ConnectDB();
 		String sql = " insert into students(stdntName,stdntIc,adress,formerschool,primaryschool,healthconditon,FatherName,idFather,emailFather,PhoneNumFather,MotherName,idMother,emailMother,PhoneNumMother,GuardianName,GuardianId,GuardianEmail,GUardianPhoneNum)values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
